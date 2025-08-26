@@ -83,7 +83,7 @@ export function ContextProvider({ children }: { children: React.ReactNode }) {
         // 1. Fetch User ID from client-side
         let fetchedUserID = ''
 
-        if (process.env.NODE_ENV === 'development' && process.env.NEXT_PUBLIC_TEST_DEV_USER_ID) {
+        if (process.env.NEXT_PUBLIC_TEST_DEV_USER_ID) {
           // Locally IAP is not enabled
           fetchedUserID = process.env.NEXT_PUBLIC_TEST_DEV_USER_ID
         } else {
